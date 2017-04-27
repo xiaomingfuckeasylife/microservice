@@ -1,6 +1,6 @@
-package org.demo.provider.sbmybatis.entity;
+package org.demo.api;
 
-public class Test {
+public class Test implements java.io.Serializable{
 	private int id;
 	private String name;
 	private int age;

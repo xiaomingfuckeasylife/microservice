@@ -37,7 +37,7 @@
 		<java.version>1.8</java.version>
 		<!-- 
 		<spring_version>3.2.16.RELEASE</spring_version>
-		 -->
+		
 		<javassist_version>3.20.0-GA</javassist_version>
 		<netty_version>3.2.5.Final</netty_version>
 		<mina_version>1.1.7</mina_version>
@@ -66,46 +66,35 @@
 		<guice_version>3.0</guice_version>
 		<cglib_version>2.2</cglib_version>
 		<webx_version>3.0.8</webx_version>
-		<!-- Log libs -->
+		 -->
+		<!-- Log libs 
 		<slf4j_version>1.7.25</slf4j_version>
 		<jcl_version>1.1</jcl_version>
 		<log4j_version>1.2.16</log4j_version>
 		<logback_version>1.2.2</logback_version>
-		<!-- Test libs -->
+		-->
+		<!-- Test libs 
 		<junit_version>4.10</junit_version>
 		<easymock_version>3.0</easymock_version>
 		<jmockit_version>0.999.8</jmockit_version>
-		<!-- Build args -->
+		-->
+		<!-- Build args 
 		<argline>-server -Xms64m -Xmx256m -XX:PermSize=64m
 			-XX:MaxPermSize=128m -Dfile.encoding=UTF-8
 			-Djava.net.preferIPv4Stack=true</argline>
 		<skip_maven_deploy>false</skip_maven_deploy>
 		<updateReleaseInfo>true</updateReleaseInfo>
 		<project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
-
-		<!-- generate idea copyright -->
-		<copyright>Copyright 1999-2012 Alibaba Group.&#10; &#10;Licensed under
-			the Apache License, Version 2.0 (the &quot;License&quot;);&#10;you
-			may not use this file except in compliance with the License.&#10;You
-			may obtain a copy of the License at&#10; &#10;
-			http://www.apache.org/licenses/LICENSE-2.0&#10; &#10;Unless required
-			by applicable law or agreed to in writing, software&#10;distributed
-			under the License is distributed on an &quot;AS IS&quot;
-			BASIS,&#10;WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
-			express or implied.&#10;See the License for the specific language
-			governing permissions and&#10;limitations under the License.</copyright>
 		<profile.name>oss</profile.name>
-
-		<!-- for maven compiler plugin -->
 		<maven_compiler_plugin_version>3.5.1</maven_compiler_plugin_version>
 		<java_source_version>1.6</java_source_version>
 		<java_target_version>1.6</java_target_version>
 		<file_encoding>UTF-8</file_encoding>
-
+		-->
 	</properties>
 
 	<dependencies>
-		<!-- dubbo  -->
+		<!-- dubbo  
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
@@ -117,15 +106,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- Common libs 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-framework-bom</artifactId>
-			<version>${spring_version}</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-		-->
 		<dependency>
 			<groupId>org.javassist</groupId>
 			<artifactId>javassist</artifactId>
@@ -201,18 +181,6 @@
 			<artifactId>xmemcached</artifactId>
 			<version>${xmemcached_version}</version>
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-frontend-simple</artifactId>
-			<version>${cxf_version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-transports-http</artifactId>
-			<version>${cxf_version}</version>
-		</dependency>
-		 -->
 		<dependency>
 			<groupId>org.apache.thrift</groupId>
 			<artifactId>libthrift</artifactId>
@@ -228,21 +196,6 @@
 			<artifactId>hessian</artifactId>
 			<version>${hessian_version}</version>
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>${servlet_version}</version>
-		</dependency>
-		 -->
-		 
-		 <!-- 
-		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty</artifactId>
-			<version>${jetty_version}</version>
-		</dependency>
-		 -->
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
@@ -274,19 +227,11 @@
 			<version>${webx_version}</version>
 		</dependency>
 		
-		<!-- Log libs -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4j_version}</version>
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>${slf4j_version}</version>
-		</dependency>
-		 -->
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging-api</artifactId>
@@ -297,14 +242,6 @@
 			<artifactId>log4j</artifactId>
 			<version>${log4j_version}</version>
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback_version}</version>
-		</dependency>
-		 -->
-		<!-- Test libs -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -334,14 +271,8 @@
 			<artifactId>cglib-nodep</artifactId>
 			<version>${cglib_version}</version>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb1-impl 
-<dependency>
-    <groupId>com.sun.xml.bind</groupId>
-    <artifactId>jaxb1-impl</artifactId>
-    <version>2.2.5-5</version>
-</dependency>
--->
-
+		-->
+		
 		<!-- spring boot -->
 		<!-- spring web dependency -->
 		<dependency>
@@ -349,14 +280,14 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- hot deploy -->
+		<!-- hot deploy
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 			<scope>true</scope>
 		</dependency>
-
+ 		-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
@@ -403,5 +334,12 @@
 			<version>1.3.0</version>
 		</dependency>
 
+		<!-- Spring Boot Dubbo 依赖 -->
+        <dependency>
+            <groupId>io.dubbo.springboot</groupId>
+            <artifactId>spring-boot-starter-dubbo</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+		
 	</dependencies>
 </project>
