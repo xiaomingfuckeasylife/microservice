@@ -1,4 +1,4 @@
-package org.demo.api;
+package org.demo.entity.demo;
 
 public class Test implements java.io.Serializable{
 	private int id;

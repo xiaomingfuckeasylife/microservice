@@ -7,24 +7,20 @@
     <artifactId>microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.demo.provider</groupId>
-  <artifactId>demo-provider</artifactId>
+  <groupId>microservice</groupId>
+  <artifactId>demo-entity</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>demo-provider</name>
+  <name>demo-entity</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
-  	<dependency>
-      <groupId>microservice</groupId>
-      <artifactId>demo-entity</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
     <dependency>
-    	  <groupId>org.demo.api</groupId>
-		  <artifactId>demo-api</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
     </dependency>
- </dependencies>
+  </dependencies>
 </project>

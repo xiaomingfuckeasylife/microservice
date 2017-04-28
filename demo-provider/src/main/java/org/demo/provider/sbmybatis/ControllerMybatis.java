@@ -2,7 +2,7 @@ package org.demo.provider.sbmybatis;
 
 import java.util.List;
 
-import org.demo.api.Test;
+import org.demo.entity.demo.Test;
 import org.demo.provider.sbmybatis.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

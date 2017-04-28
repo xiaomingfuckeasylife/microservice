@@ -1,4 +1,4 @@
-package org.demo.consumer;
+package org.demo.entity;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
